@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfNawMvvm.ViewModel;
 
 namespace WpfNawMvvm
 {
@@ -20,17 +21,22 @@ namespace WpfNawMvvm
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        NAWViewModel _naw = new NAWViewModel();
+
+        public MainWindow() 
         {
             InitializeComponent();
+
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-
-            System.Windows.Data.CollectionViewSource nAWViewModelViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("nAWViewModelViewSource")));
-            // Load data by setting the CollectionViewSource.Source property:
-            // nAWViewModelViewSource.Source = [generic data source]
+            _naw.Name = "Wim de Jong";
+            _naw.Address = "Seringenstraat 4";
+            _naw.Telephone = 0162428899;
+            _naw.City = "Oosterhout NB";
+            DataContext = _naw;
+            _naw.Load();
         }
     }
 }
