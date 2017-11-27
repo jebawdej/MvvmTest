@@ -1,6 +1,6 @@
 using GalaSoft.MvvmLight;
 
-namespace WpfNawMvvm.ViewModel
+namespace WPF_MVVMLight_CRUD.ViewModel
 {
     /// <summary>
     /// This class contains properties that the main View can data bind to.

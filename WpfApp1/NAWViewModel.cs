@@ -8,10 +8,11 @@ using System.Windows.Input;
 
 namespace WpfApp1
 {
+    //MVVM example without MVVM-light
     public class NAWViewModel : INotifyPropertyChanged
     {
         NAW _naw;
-        ICommand SaveCommand;
+
         public NAWViewModel()
         {
             _naw = new NAW { Name = "Unknown", Address = "Unknown", City = "Unknown", Telephone = -1 };

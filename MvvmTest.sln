@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2008
+VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uwp_Mvvm", "Uwp_Mvvm\Uwp_Mvvm.csproj", "{5A4F3651-5916-4A84-95F6-F6C304586003}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{C96674F6-CD33-4BBD-AF8B-C35EAEC7AFDD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfNawMvvm", "WpfNawMvvm\WpfNawMvvm.csproj", "{A4E40C5A-21B5-49B0-90E9-B8A7E0906B89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_MVVMLight_CRUD", "WPF_MVVMLight_CRUD\WPF_MVVMLight_CRUD.csproj", "{BEF0590C-0DF2-4099-9335-9795EAD30E8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +75,22 @@ Global
 		{A4E40C5A-21B5-49B0-90E9-B8A7E0906B89}.Release|x64.Build.0 = Release|Any CPU
 		{A4E40C5A-21B5-49B0-90E9-B8A7E0906B89}.Release|x86.ActiveCfg = Release|Any CPU
 		{A4E40C5A-21B5-49B0-90E9-B8A7E0906B89}.Release|x86.Build.0 = Release|Any CPU
+		{BEF0590C-0DF2-4099-9335-9795EAD30E8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEF0590C-0DF2-4099-9335-9795EAD30E8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEF0590C-0DF2-4099-9335-9795EAD30E8B}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{BEF0590C-0DF2-4099-9335-9795EAD30E8B}.Debug|ARM.Build.0 = Debug|Any CPU
+		{BEF0590C-0DF2-4099-9335-9795EAD30E8B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BEF0590C-0DF2-4099-9335-9795EAD30E8B}.Debug|x64.Build.0 = Debug|Any CPU
+		{BEF0590C-0DF2-4099-9335-9795EAD30E8B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BEF0590C-0DF2-4099-9335-9795EAD30E8B}.Debug|x86.Build.0 = Debug|Any CPU
+		{BEF0590C-0DF2-4099-9335-9795EAD30E8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEF0590C-0DF2-4099-9335-9795EAD30E8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEF0590C-0DF2-4099-9335-9795EAD30E8B}.Release|ARM.ActiveCfg = Release|Any CPU
+		{BEF0590C-0DF2-4099-9335-9795EAD30E8B}.Release|ARM.Build.0 = Release|Any CPU
+		{BEF0590C-0DF2-4099-9335-9795EAD30E8B}.Release|x64.ActiveCfg = Release|Any CPU
+		{BEF0590C-0DF2-4099-9335-9795EAD30E8B}.Release|x64.Build.0 = Release|Any CPU
+		{BEF0590C-0DF2-4099-9335-9795EAD30E8B}.Release|x86.ActiveCfg = Release|Any CPU
+		{BEF0590C-0DF2-4099-9335-9795EAD30E8B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
