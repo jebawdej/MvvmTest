@@ -15,10 +15,12 @@ namespace WpfNawMvvm.ViewModel
     public class NAWViewModel : ViewModelBase
     {
         NAW _naw, _prevNaw;
-        
+        string[] Cities = new string[] { "Oosterhout NB", "Amsterdam", "Rotterdan", "Chaam" };
+        List<string> _citiesList;
         public NAWViewModel()
         {
             _naw = new NAW { Name = "Unknown", Address = "Unknown", City = "Unknown", Telephone = -1 };
+            _citiesList = new List<string>(Cities);
             SaveCommand = new RelayCommand(Save, CanSave);
             CancelCommand = new RelayCommand(Cancel);
         }
@@ -77,6 +79,18 @@ namespace WpfNawMvvm.ViewModel
             }
         }
 
+        public List<string> CitiesList
+        {
+            get { return _citiesList; }
+            set
+            {
+                if(_citiesList != value)
+                {
+                    _citiesList = value;
+                    RaisePropertyChanged("CitiesList");
+                }
+            }
+        }
         public long Telephone
         {
             get

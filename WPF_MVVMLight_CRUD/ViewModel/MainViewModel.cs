@@ -1,4 +1,8 @@
 using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
+using System.Collections.ObjectModel;
+using WPF_MVVMLight_CRUD.Models;
+using WPF_MVVMLight_CRUD.Services;
 
 namespace WPF_MVVMLight_CRUD.ViewModel
 {
@@ -16,19 +20,40 @@ namespace WPF_MVVMLight_CRUD.ViewModel
     /// </summary>
     public class MainViewModel : ViewModelBase
     {
+        public RelayCommand ReadAllCommand { get; set; }
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
-        public MainViewModel()
+        public MainViewModel(IDataAccessService servPxy)
         {
-            ////if (IsInDesignMode)
-            ////{
-            ////    // Code runs in Blend --> create design time data.
-            ////}
-            ////else
-            ////{
-            ////    // Code runs "for real"
-            ////}
+            _serviceProxy = servPxy;
+            Employees = new ObservableCollection<EmployeeInfo>();
+            ReadAllCommand = new RelayCommand(GetEmployees);
+        }
+
+        ObservableCollection<EmployeeInfo> _Employees;
+        private IDataAccessService _serviceProxy;
+
+        public ObservableCollection<EmployeeInfo> Employees
+        {
+            get { return _Employees; }
+            set
+            {
+                _Employees = value;
+                RaisePropertyChanged("Employees");
+            }
+        }
+
+        /// <summary>
+        /// Method to Read All Employees
+        /// </summary>
+        void GetEmployees()
+        {
+            Employees.Clear();
+            foreach (var item in _serviceProxy.GetEmployees())
+            {
+                Employees.Add(item);
+            }
         }
     }
 }

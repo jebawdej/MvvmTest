@@ -15,6 +15,7 @@
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
 using Microsoft.Practices.ServiceLocation;
+using WPF_MVVMLight_CRUD.Services;
 
 namespace WPF_MVVMLight_CRUD.ViewModel
 {
@@ -43,6 +44,7 @@ namespace WPF_MVVMLight_CRUD.ViewModel
             ////}
 
             SimpleIoc.Default.Register<MainViewModel>();
+            SimpleIoc.Default.Register <IDataAccessService, DataAccessService>();
         }
 
         public MainViewModel Main
