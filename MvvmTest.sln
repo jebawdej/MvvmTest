@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2010
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uwp_Mvvm", "Uwp_Mvvm\Uwp_Mvvm.csproj", "{5A4F3651-5916-4A84-95F6-F6C304586003}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfNawMvvm", "WpfNawMvvm\WpfNawMvvm.csproj", "{A4E40C5A-21B5-49B0-90E9-B8A7E0906B89}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_MVVMLight_CRUD", "WPF_MVVMLight_CRUD\WPF_MVVMLight_CRUD.csproj", "{BEF0590C-0DF2-4099-9335-9795EAD30E8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf_EF", "Wpf_EF\Wpf_EF.csproj", "{924DD2D9-9FB1-4CDE-BC59-9B5D84713035}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,6 +93,22 @@ Global
 		{BEF0590C-0DF2-4099-9335-9795EAD30E8B}.Release|x64.Build.0 = Release|Any CPU
 		{BEF0590C-0DF2-4099-9335-9795EAD30E8B}.Release|x86.ActiveCfg = Release|Any CPU
 		{BEF0590C-0DF2-4099-9335-9795EAD30E8B}.Release|x86.Build.0 = Release|Any CPU
+		{924DD2D9-9FB1-4CDE-BC59-9B5D84713035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{924DD2D9-9FB1-4CDE-BC59-9B5D84713035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{924DD2D9-9FB1-4CDE-BC59-9B5D84713035}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{924DD2D9-9FB1-4CDE-BC59-9B5D84713035}.Debug|ARM.Build.0 = Debug|Any CPU
+		{924DD2D9-9FB1-4CDE-BC59-9B5D84713035}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{924DD2D9-9FB1-4CDE-BC59-9B5D84713035}.Debug|x64.Build.0 = Debug|Any CPU
+		{924DD2D9-9FB1-4CDE-BC59-9B5D84713035}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{924DD2D9-9FB1-4CDE-BC59-9B5D84713035}.Debug|x86.Build.0 = Debug|Any CPU
+		{924DD2D9-9FB1-4CDE-BC59-9B5D84713035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{924DD2D9-9FB1-4CDE-BC59-9B5D84713035}.Release|Any CPU.Build.0 = Release|Any CPU
+		{924DD2D9-9FB1-4CDE-BC59-9B5D84713035}.Release|ARM.ActiveCfg = Release|Any CPU
+		{924DD2D9-9FB1-4CDE-BC59-9B5D84713035}.Release|ARM.Build.0 = Release|Any CPU
+		{924DD2D9-9FB1-4CDE-BC59-9B5D84713035}.Release|x64.ActiveCfg = Release|Any CPU
+		{924DD2D9-9FB1-4CDE-BC59-9B5D84713035}.Release|x64.Build.0 = Release|Any CPU
+		{924DD2D9-9FB1-4CDE-BC59-9B5D84713035}.Release|x86.ActiveCfg = Release|Any CPU
+		{924DD2D9-9FB1-4CDE-BC59-9B5D84713035}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
