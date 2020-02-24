@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfMvvmDsmSimulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfMvvmDsmSimulator"
+        mc:Ignorable="d"
+        Title="{Binding Title}"  Height="450" Width="800"
+        DataContext="{Binding Main, Source={StaticResource Locator}}">
+    <Grid>
+        <StackPanel Margin="10">
+            <Label FontWeight="Bold">Status</Label>
+            <CheckBox IsChecked="{Binding Status[0].Title, Mode=TwoWay}">Bit0</CheckBox>
+            <CheckBox IsChecked="{Binding Status[1], Mode=TwoWay}">Bit1</CheckBox>
+            <CheckBox IsChecked="{Binding Status[2], Mode=TwoWay}">Bit2</CheckBox>
+            <CheckBox IsChecked="{Binding Status[3], Mode=TwoWay}">Bit3</CheckBox>
+            <CheckBox IsChecked="{Binding Status[4], Mode=TwoWay}">Bit4</CheckBox>
+            <CheckBox IsChecked="{Binding Status[5], Mode=TwoWay}">Bit5</CheckBox>
+            <CheckBox IsChecked="{Binding Status[6], Mode=TwoWay}">Bit6</CheckBox>
+            <CheckBox IsChecked="{Binding Status[7], Mode=TwoWay}">Bit7</CheckBox>
+        </StackPanel>
+    </Grid>
+</Window>
